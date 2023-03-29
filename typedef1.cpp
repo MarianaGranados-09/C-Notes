@@ -12,17 +12,32 @@ using std::setprecision;    using std::vector;
 
 int main()
 {
-    typedef int Age;
 
-    //make more ints using Age as the reference
-    Age adult;
-    Age teen;
-    Age child;
+    /*typedef vector<int> vInt;
 
-    cout<<"Enter the age for an adult: ";
-    cin>>adult;
+    vInt v;
+    v.push_back(190);
+    v.push_back(200);
+    v.push_back(25);
 
+    for(auto X : v){
+        cout<<X<<" ";
+    } */
+
+    //using typedef with arrays
+    //typedef <data_type> <alias_name> [<size>]
+
+    typedef int arr[3];
+
+    arr array1{1,1,1};
+
+    cout<<"Array output: "<<endl;
+    for(int i=0;i<3;i++)
+    {
+        cout<<array1[i]<<" ";
+    }
 
 
     return 0;
 }
+

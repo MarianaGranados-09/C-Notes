@@ -16,15 +16,10 @@ private:
     int pdenominator{};
 
 public:
-    Fraction() //default constructor
+    //reducing by one constructor
+    Fraction(int num = 1, int den = 0)
     {
-       pnumerator = 0;
-       pdenominator = 1;
-    }
-
-    Fraction(int num, int den) // constructor with two parameters, one having a default value
-    {
-        assert(denominator != 0); //exits of condition is false
+        assert(den != 0);
         pnumerator = num;
         pdenominator = den;
     }
